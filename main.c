@@ -208,7 +208,7 @@ int main(int argc, char *argv[]) {
 
     printf("Digite as palavras a serem encontradas, separadas por virgula:\n");
     entradaPalavras = getLn();
-    if (entradaPalavras == "") {
+    if (strlen(entradaPalavras) == 0) {
         fprintf(stderr, "Pelo menos uma palavra deve ser informada.\n");
         return 1;
     }
